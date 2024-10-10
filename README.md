@@ -5,7 +5,7 @@ A tool for easily compiling Rig projects to WebAssembly.
 ## Installation
 
 ```bash
-cargo install --git https://github.com/yourusername/rig-wasm-compiler.git
+cargo install --git https://github.com/0xPlaygrounds/rig-wasm-compiler.git
 ```
 
 ## Usage
