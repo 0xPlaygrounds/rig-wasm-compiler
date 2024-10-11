@@ -23,41 +23,6 @@ Rig WASM Compiler is a powerful tool that enables the compilation of Rig applica
 
 ## Quick Start
 
-### Project structure:
-```
-rig-wasm-compiler/
-├── Cargo.toml
-├── .gitignore
-├── README.md
-├── build.rs
-├── src/
-│   ├── main.rs
-│   ├── lib.rs
-│   ├── config.rs
-│   ├── wasm_bindings/
-│   │   ├── mod.rs
-│   │   ├── agent.rs
-│   │   └── rag.rs
-│   ├── adapters/
-│   │   ├── mod.rs
-│   │   ├── http_client.rs
-│   │   └── vector_store.rs
-│   └── utils/
-│       ├── mod.rs
-│       └── wasm_utils.rs
-├── examples/
-│   ├── simple_agent.rs
-│   └── rag_agent.rs
-├── tests/
-│   ├── integration_tests.rs
-│   └── wasm_tests.rs
-└── www/
-    ├── index.html
-    ├── index.js
-    └── webpack.config.js
-
-```
-
 ### Installation
 
 To install the Rig WASM Compiler, ensure you have Rust and Cargo installed, then run:
@@ -123,9 +88,61 @@ To set up the development environment:
    cargo test
    ```
 
+### Running WASM Tests
+
+To run WASM-specific tests:
+
+```bash
+wasm-pack test --headless --firefox
+```
+
+This command runs the tests in a headless Firefox browser. Make sure you have Firefox installed.
+
+### Building for WASM
+
+To build your Rig application for WASM:
+
+1. Ensure you have `wasm-pack` installed:
+   ```bash
+   cargo install wasm-pack
+   ```
+
+2. Build your project:
+   ```bash
+   wasm-pack build --target web
+   ```
+
+This will generate WASM files in the `pkg/` directory.
+
+## Project Structure
+
+```
+rig-wasm-compiler/
+├── src/
+│   ├── lib.rs              # Main library code
+│   ├── main.rs             # CLI entry point
+│   ├── config.rs           # Configuration structures
+│   ├── wasm_bindings/      # WASM-specific bindings
+│   ├── adapters/           # WASM-compatible adapters
+│   └── utils/              # Utility functions
+├── examples/               # Example Rig applications
+├── tests/                  # Integration and WASM tests
+├── www/                    # Web demo files
+└── build.rs                # Custom build script
+```
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for more details on how to get started.
+
+### Submitting Pull Requests
+
+1. Fork the repository and create your branch from `main`.
+2. If you've added code that should be tested, add tests.
+3. If you've changed APIs, update the documentation.
+4. Ensure the test suite passes.
+5. Make sure your code lints.
+6. Issue that pull request!
 
 ## License
 
