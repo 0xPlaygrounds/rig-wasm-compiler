@@ -1,16 +1,5 @@
 # Rig WASM Compiler
 
-<p align="center">
-  <img src="path_to_logo.png" alt="Rig WASM Compiler Logo" width="200"/>
-</p>
-
-<p align="center">
-  <a href="https://github.com/yourusername/rig-wasm-compiler/actions"><img alt="Build Status" src="https://github.com/yourusername/rig-wasm-compiler/workflows/CI/badge.svg"></a>
-  <a href="https://crates.io/crates/rig-wasm-compiler"><img alt="Crate Info" src="https://img.shields.io/crates/v/rig-wasm-compiler.svg"></a>
-  <a href="https://docs.rs/rig-wasm-compiler"><img alt="API Docs" src="https://docs.rs/rig-wasm-compiler/badge.svg"></a>
-  <a href="https://github.com/yourusername/rig-wasm-compiler/blob/main/LICENSE"><img alt="License Info" src="https://img.shields.io/github/license/yourusername/rig-wasm-compiler"></a>
-</p>
-
 Rig WASM Compiler is a powerful tool that enables the compilation of Rig applications to WebAssembly (WASM), allowing Rig-based LLM applications to run seamlessly in web browsers. This project bridges the gap between Rig's robust AI capabilities and the web platform, opening up new possibilities for AI-powered web applications.
 
 ## Features
