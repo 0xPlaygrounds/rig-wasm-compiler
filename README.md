@@ -1,6 +1,6 @@
 # Rig WASM Compiler
 
-Rig WASM Compiler is a powerful tool that enables the compilation of Rig applications to WebAssembly (WASM), allowing Rig-based LLM applications to run seamlessly in web browsers. This project bridges the gap between Rig's robust AI capabilities and the web platform, opening up new possibilities for AI-powered web applications.
+Rig WASM Compiler is a tool that enables the compilation of Rig applications to WebAssembly (WASM), allowing Rig-based LLM applications to run seamlessly in web browsers. This project bridges the gap between Rig's robust AI capabilities and the web platform, opening up new possibilities for AI-powered web applications.
 
 ## Features
 
